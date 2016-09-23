@@ -10,10 +10,10 @@ humandate: "Oct 25-26, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2015-10-25      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2015-10-28        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Alistair Walsh", "TBA", "Philipp Bayer"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Andrea Bedini", "Rebecca Lange"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Alistair Walsh", "Philipp Bayer"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Andrea Bedini", "Rebecca Lange", "TBA"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "philipp.bayer@uwa.edu.au"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+etherpad:  https://public.etherpad-mozilla.org/p/2015-10-25-uwa # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Data organization in spreadsheets and OpenRefine"
 day1_pm: "Introduction to Python"
@@ -64,6 +64,8 @@ effectively with data.
 We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
 
 Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+
+You can register <a href='https://payments.uwa.edu.au/DataCarpentryWorkshop'>HERE</a>!
 </p>
 
 <!--
@@ -145,24 +147,29 @@ Participants should bring their laptops and plan to participate actively. By the
 <p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
 
-
-
 <div class="row">
   <div class="col-md-6">
-
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
+      <tr> <td>08:30</td>  <td>Data organization in spreadsheets and Open refine</td> </tr>
+      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Python basics</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
- 
- 
+  </div>
+  <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
+      <tr> <td>08:30</td>  <td>Data analysis and visualization in Python</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Data management with SQL</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
- </div>
+  </div>
 </div>
 
 <!--
@@ -205,20 +212,17 @@ Participants should bring their laptops and plan to participate actively. By the
   'tools/check' as well.
 -->
 <h2>Syllabus</h2>
+<div class='col-md-6'>
+  <h3>Cleaning data in OpenRefine</h3>
+    <ul>
+      <li>Working with data in</li>
+      <li>Cleaning and filtering messy data</li>
+      <li>Normalising messy data</li>
+      <li>Basic scripting</li>
+    </ul>
+</div>
 
 <div class="row">
-  <div class="col-md-6">
-    <h3>The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
-    </ul>
-  </div>
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -232,38 +236,10 @@ Participants should bring their laptops and plan to participate actively. By the
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-<!--
-
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
--->
 
 </div>
 
 <div class="row">
-  <div class="col-md-6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
   <div class="col-md-6">
     <h3>Managing Data with SQL</h3>
     <ul>
